@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif, Arial, Helvetica, sans-serif;
+}
+body{
+    background: rgb(22, 14, 14);
+    color: white
+}
+#header{
+    height: 100vh;
+    width: 100%;
+    background-image: url(assets/images/background-img.png);
+    background-size: cover;
+    background-position: center;
+}
