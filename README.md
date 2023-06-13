@@ -1,5 +1,9 @@
 # Professional Portfolio
 
+## Deployment Link
+
+https://otabek0111.github.io/Professional-Portfolio/
+
 This repository contains the source code and assets for creating a professional portfolio website. A portfolio website is a great way to showcase your skills, projects, and achievements to potential employers or clients.
 
 ## Features
@@ -8,6 +12,24 @@ This repository contains the source code and assets for creating a professional 
 - Sections for About Me, My Work, and Contact information
 - Integration with external links and social media profiles
 - Easy customization and addition of projects
+
+## Screen Shots of the application
+
+Screen shot 1 
+
+![](assets/images/Screenshot-1.png)
+
+Screen shot 2
+
+![](assets/images/Screenshot-2.png)
+
+Screen shot 3
+
+![](assets/images/Screenshot-3.png)
+
+Screen shot 4
+
+![](assets/images/Screenshot-4.png)
 
 ## Getting Started
 
