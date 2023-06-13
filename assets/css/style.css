@@ -1,17 +1,94 @@
+/* universal styling for the webpage */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins',sans-serif, Arial, Helvetica, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 body{
     background: rgb(22, 14, 14);
     color: white
 }
-#header{
+header{
+    background-image: url(/assets/images/background-img.jpg);
+    background-position: center;
+    background-size: cover;
     height: 100vh;
     width: 100%;
-    background-image: url(assets/images/background-img.png);
-    background-size: cover;
-    background-position: center;
 }
+/* some space for the cantainer from all sides  */
+.contain{
+    padding: 10px 9%;
+
+}
+/* styling for the list of items to display properly into the screen */
+nav{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+}
+ /* size for the logo */
+.logo{
+    width: 250px;
+    left: 50px;
+}
+/* to customize the top selectors so they are visiable */
+nav ul li{
+    margin: 15px 25px;
+    display: inline-block;
+    list-style: none;
+}
+/* styling for the text on the top right */
+nav ul li a{
+    color:aliceblue;
+    font-size: 28px;
+    text-decoration: none;
+    position: relative;
+}
+/* make a small line under each href so when hovered over it apears */
+nav ul li a::after{
+    content: '';
+    width: 0; 
+    height: 4px;
+    background: lightsalmon;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.8s;
+}
+/* to make the line appear after hover */
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/* style about me section */
+#about{ 
+    color: beige;
+    padding: 90px 0;
+    background-color: rgba(9, 9, 18, 0.835);
+}
+/* to make a row and space between the image and text, make it look neat */
+.row{ 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-img{
+    flex-basis: 30%;
+}
+.about-img img{
+    width: 100%;
+    border-radius: 3%;
+}
+.about-txt{
+    flex-basis: 65%;
+}
+/* make the text larger and thinner  */
+.about-txts{
+    color:blanchedalmond;
+    font-size: 60px;
+    font-weight: 600;
+}
+/* make styling to my work section */
+#class 
