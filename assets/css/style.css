@@ -1,55 +1,61 @@
-/* universal styling for the webpage */
+/* Universal styling for the webpage */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-body{
+
+body {
     background: rgb(22, 14, 14);
-    color: white
+    color: white;
 }
-header{
+
+header {
     background-image: url(/assets/images/background-img.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
     width: 100%;
 }
-/* some space for the cantainer from all sides  */
-.contain{
-    padding: 10px 9%;
 
+/* Some space for the container from all sides */
+.contain {
+    padding: 30px 9%;
 }
-/* styling for the list of items to display properly into the screen */
-nav{
+
+/* Styling for the navigation menu */
+nav {
     justify-content: space-between;
     flex-wrap: wrap;
     display: flex;
     align-items: center;
+    padding: 10px;
 }
- /* size for the logo */
-.logo{
-    width: 250px;
-    left: 50px;
+
+/* Size for the logo */
+.logo {
+    width: 220px;
 }
-/* to customize the top selectors so they are visiable */
-nav ul li{
-    margin: 15px 25px;
+
+/* Styling for the navigation menu items */
+nav ul li {
+    margin: 5px 25px;
     display: inline-block;
     list-style: none;
 }
-/* styling for the text on the top right */
-nav ul li a{
-    color:aliceblue;
+
+nav ul li a {
+    color: aliceblue;
     font-size: 28px;
     text-decoration: none;
     position: relative;
 }
-/* make a small line under each href so when hovered over it apears */
-nav ul li a::after{
+
+/* Adding a line under each link when hovered */
+nav ul li a::after {
     content: '';
-    width: 0; 
+    width: 0;
     height: 4px;
     background: lightsalmon;
     position: absolute;
@@ -57,38 +63,200 @@ nav ul li a::after{
     bottom: -6px;
     transition: 0.8s;
 }
-/* to make the line appear after hover */
-nav ul li a:hover::after{
+
+nav ul li a:hover::after {
     width: 100%;
 }
 
-/* style about me section */
-#about{ 
+/* Styling for the About Me section */
+#about {
     color: beige;
     padding: 90px 0;
-    background-color: rgba(9, 9, 18, 0.835);
+    background-color: rgba(24, 23, 23, 0.835);
 }
-/* to make a row and space between the image and text, make it look neat */
-.row{ 
+
+/* Creating a row and space between the image and text */
+.row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.about-img{
+
+.about-img {
     flex-basis: 30%;
 }
-.about-img img{
+
+.about-img img {
     width: 100%;
     border-radius: 3%;
 }
-.about-txt{
+
+.about-txt {
     flex-basis: 65%;
 }
-/* make the text larger and thinner  */
-.about-txts{
-    color:blanchedalmond;
-    font-size: 60px;
+
+/* Styling for the text in the About Me section */
+.about-txts {
+    color: blanchedalmond;
+    font-size: 55px;
     font-weight: 600;
 }
-/* make styling to my work section */
-#class 
+
+/* Styling for the My Work section */
+#class {
+    margin-top: 40px;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-txts {
+    text-align: center;
+}
+
+.worklist {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 29px;
+}
+
+.work {
+    flex-basis: calc(33.33% - 10px);
+    margin-bottom: 20px;
+    position: relative;
+    padding: 20px;
+}
+
+.work-large {
+    flex-basis: calc(66.67% - 10px);
+}
+
+.work img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.work::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background-color: rgb(212, 210, 202);
+    opacity: 0;
+    filter: blur(5px);
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.work:hover::before {
+    opacity: 0.6;
+}
+
+.work .overlay {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.work:hover .overlay {
+    opacity: 1;
+}
+
+.work .overlay-text {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 4px;
+}
+
+/* Styling for the Contact Me section */
+#contant {
+    color: beige;
+    padding: 90px 0;
+    background-color: rgba(24, 23, 23, 0.835);
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cont {
+    text-align: center;
+}
+
+.contact {
+    color: blanchedalmond;
+    font-size: 55px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.cont p {
+    margin-bottom: 10px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.icons a {
+    color: blanchedalmond;
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+/* Media Queries for smaller screen sizes */
+@media screen and (max-width: 767px) {
+    .work {
+        flex-basis: calc(50% - 10px);
+        color: rgb(134, 114, 88);
+    }
+
+    .work-large {
+        flex-basis: 100%;
+    }
+
+    .cont {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .work {
+        flex-basis: 100%;
+    }
+}
