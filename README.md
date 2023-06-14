@@ -15,19 +15,19 @@ This repository contains the source code and assets for creating a professional 
 
 ## Screen Shots of the application
 
-Screen shot 1 
+Screen shot 1: Top of the Webpage.
 
 ![](assets/images/Screenshot-1.png)
 
-Screen shot 2
+Screen shot 2: About Me section.
 
 ![](assets/images/Screenshot-2.png)
 
-Screen shot 3
+Screen shot 3: My Work section.
 
 ![](assets/images/Screenshot-3.png)
 
-Screen shot 4
+Screen shot 4: Bottom section, Contact me.
 
 ![](assets/images/Screenshot-4.png)
 
@@ -76,4 +76,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 - Recieved help from Tutors/BCS learning center to fix bugs and issues.
 
-- Followed a similar template from this resource:https://www.youtube.com/watch?v=Tkp3FDgOueM.
+- Took example from a similar template from this resource: https://www.youtube.com/watch?v=Tkp3FDgOueM.
