@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
 
 body {
@@ -12,8 +12,9 @@ body {
 }
 
 header {
-    background-image: url("../images/background-img.jpg");
-    background-position: center;
+    
+    background-image: url("../images/background-img.jpg" );
+    background-position: center; 
     background-size: cover;
     height: 100vh;
     width: 100%;
@@ -255,6 +256,8 @@ nav ul li a:hover::after {
     font-size: 30px;
     margin: 0 10px;
 }
+
+    
 
 /* Media Queries for smaller screen sizes */
 @media screen and (max-width: 767px) {
